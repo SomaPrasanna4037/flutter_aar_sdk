@@ -19,11 +19,7 @@ publishing {
         maven {
             url = uri("$buildDir/repo")
         }
-        mavenLocal()  // Also publish to ~/.m2/repository for JitPack compatibility
+      
     }
 }
 
-tasks.register('publishAll') {
-    dependsOn 'publish'
-    dependsOn 'publishToMavenLocal'
-}
