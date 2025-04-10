@@ -7,7 +7,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             artifactId = 'flutter_release'
-            artifact 'com/example/flutter/flutter_release/1.0/flutter_release-1.0.aar'
+            artifact 'flutter_aar-repo/com/example/flutter/flutter_release/1.0/flutter_release-1.0.aar'
             pom.withXml {
                 def root = asNode()
                 root.appendNode('name', 'Flutter Release Module')
